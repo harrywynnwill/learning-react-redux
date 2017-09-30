@@ -5,4 +5,12 @@ module.exports = {
   output: {
     path: path.resolve('dist'),
     filename: 'main.js'
-},
+  },
+  module: {
+    loaders: [
+      { test: /.jsx?$/, loader: 'babel-loader', exclude:
+               /node_modules/
+      }
+    ]
+  }
+}
