@@ -1,9 +1,3 @@
-import {CREATE_POST} from './action-types'
-function createPost (user, text){
-  return {
-    type: CREATE_POST,
-    user: user,
-    text: text
-  }
-}
+import { createPost, editPost, setFilter } from './actions'
+
 console.log(createPost("Dan", "Hello World!"))
